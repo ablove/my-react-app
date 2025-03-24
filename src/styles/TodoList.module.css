@@ -1,26 +1,72 @@
-.todo-list {
-  width: 100%;
+/* src/styles/TodoList.module.css */
+
+.container {
   max-width: 400px;
-  margin: 20px auto;
+  margin: 50px auto;
+  background: #f8f9fa;
   padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
 }
 
-.todo-list ul {
-  list-style-type: none;
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.inputContainer {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.todoList {
+  list-style: none;
   padding: 0;
 }
 
-.todo-list li {
+.todoItem {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: white;
   padding: 10px;
-  border-bottom: 1px solid #ddd;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.todo-list li:last-child {
-  border-bottom: none;
+.deleteButton {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  background: darkred;
 }

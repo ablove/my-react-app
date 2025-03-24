@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import TodoList from "../components/TodoList";
-import AddTodo from "../components/AddTodo";
+import React, { useState } from 'react';
+import TodoList from '../components/TodoList';
+import AddTodo from '../components/AddTodo';
 
 const Home: React.FC = () => {
   const [todos, setTodos] = useState<string[]>([]);
